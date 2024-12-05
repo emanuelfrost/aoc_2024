@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
 
     println(sum)
 
-    assert(sum == 3246517L)
+    require(sum == 3246517L)
 
     //Your puzzle answer was 3246517.
     //The first half of this puzzle is complete! It provides one gold star: *
@@ -30,5 +30,5 @@ fun main(args: Array<String>) {
 
     println(sum2)
 
-    assert(sum2 == 29379307L)
+    require(sum2 == 29379307L)
 }

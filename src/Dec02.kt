@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     val safeReports = reportResults.filter { it == Increasing || it == Decreasing }
 
     println(safeReports.size)
-    assert(safeReports.size == 631)
+    require(safeReports.size == 631)
 
     //Part 2
     val reportMaxLength = reports.maxBy { it.size }.max()
@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
     val okFaultyReports = reports.size - badLines.size
 
     println(okFaultyReports)
-    assert(okFaultyReports == 665)
+    require(okFaultyReports == 665)
 }
 
 object Dec02 {

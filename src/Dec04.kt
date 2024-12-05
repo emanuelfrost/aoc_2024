@@ -1,8 +1,6 @@
-package src
-
-import src.Dec04.checkForXMas
-import src.Dec04.diagonalLines
-import src.Dec04.verticalLines
+import Dec04.checkForXMas
+import Dec04.diagonalLines
+import Dec04.verticalLines
 import java.io.File
 
 fun main(args: Array<String>) {
@@ -18,13 +16,13 @@ fun main(args: Array<String>) {
     val xmasCount = horizontal + diagonalNW + vertical + diagonalNE
 
     println(xmasCount)
-    assert(xmasCount == 2562)
+    require(xmasCount == 2562)
 
     //Part2
     val xMasCount = checkForXMas(input)
 
     println(xMasCount)
-    assert(xMasCount == 1902)
+    require(xMasCount == 1902)
 }
 
 object Dec04 {

@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 
     println(operationsResult)
 
-    assert(operationsResult == 170807108)
+    require(operationsResult == 170807108)
 
     val conditions = """(don\'t)[\s\S]*?(do\(\)|\Z)""".toRegex()
     val conditionMatches = conditions.findAll(input).map { it.range }.toList()
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
         conditionMatches.any { it.contains(op.range.first) && it.contains(op.range.last) }
     }.sumOf { it.result }
 
-    assert(operationsResult == 74838033)
+    require(operationsResult2 == 74838033)
 
     println(operationsResult2)
 }
