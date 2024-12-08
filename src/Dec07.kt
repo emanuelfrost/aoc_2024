@@ -1,6 +1,4 @@
-package src
-
-import src.Dec07.prepareCheckEquation
+import Dec07.prepareCheckEquation
 import java.io.File
 import kotlin.math.pow
 
