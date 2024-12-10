@@ -64,8 +64,8 @@ object Dec8 {
     }
 
     fun getAntennas(input: List<String>, size: Vec2) =
-        (0..size.y).mapNotNull { y ->
-            (0..size.x).mapNotNull { x ->
+        input.indices.mapNotNull { y ->
+            input[0].indices.mapNotNull { x ->
                 val c = input[y][x]
                 if (c != '.')
                     Antenna(c, Vec2(x, y))
